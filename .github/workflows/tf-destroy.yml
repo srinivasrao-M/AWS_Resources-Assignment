@@ -1,4 +1,4 @@
-name: AWS Resouces creation
+name: Destroy AWS Resouces
 on:
   workflow_dispatch:
     inputs:
@@ -16,7 +16,7 @@ defaults:
     shell: bash
 jobs:
   terraform:
-    name: Create AWS Resouces
+    name: Destroy AWS Resouces
     runs-on: ${{ matrix.os }}
     strategy:
       fail-fast: false
